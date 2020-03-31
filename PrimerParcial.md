@@ -11,6 +11,14 @@ Se solicita la gestion de mensajes de un productor hacia sus consumidores, donde
 
 Algo muy importante para resaltar es lo siguiente: Al principio, no se entendió bien el objetivo del parcial, por lo que primero montamos la arqquitectura de forma local, es decir, en la misma máquina virtual, y luego, la montamos de forma distribuida, es decir, en diferentes máquinas virtuales. No obstante, esto no afecta la arquitectura de este documento ya qque los cambios realizados no fueron mayores.
 
+Finalmente se le solicita a la persona que desee verificar los resultados de esta practica que:
+
+Tener una buena capacidad de procesamiento ya que la creacion de tres maquinas virtuales puede ser un poco pesado en algunos casos. Cada maquina se crea con 512 MB de memoria RAM.
+
+En el caso de que se tengan problemas de creación y aprovisionamiento de las maquinas virtuales, se recomienda volver a ejecutar el Vagrantfile.
+
+Al momento de finalizar la creación y aprovisionamiento de las maquinas, se debe ingresar por vagrant ssh nombre de la maquina, moverse al directorio parcial01 y ejecutar el respectivo archivo que le corresponde a la maquina. Ejemplo: Para consumidorUno se ejecuta el archivo consumidor-1.py, el consumidor dos sigue la misma logica que el consumidor uno y el productor debe ejecutar el archivo exchangeBroker.py.
+
 La solucion propuesta se define en la siguiente arquitecctura:
 
 ![Solucion propuesta](/images/infraestructura.jpeg)
@@ -27,7 +35,7 @@ Para la preparación de la solución se realizo la instalación de ***Erlang***,
 ![Toma del repositorio](/images/repoErlang.jpeg)
 
 2. Se realiza la instalacion de Erlang.
-![Instalacion de Erlang](/images/installErlang.jpeg)
+![Instalacion de Erlang](/images/ierlang.jpeg)
 
 3. Instalacion de Erlang, se muestra su version.
 ![Erlang Version](/images/versionErlang.jpeg)
